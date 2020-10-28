@@ -1,1 +1,2 @@
 # argocd-app-example
+random
