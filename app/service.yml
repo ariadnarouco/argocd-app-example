@@ -7,9 +7,6 @@ metadata:
     argocd.argoproj.io/instance: bootcamp
   name: kubernetes-bootcamp
   namespace: guestbook
-  resourceVersion: "1464295"
-  selfLink: /api/v1/namespaces/guestbook/services/kubernetes-bootcamp
-  uid: 664da3bc-f734-419a-b814-fce7d47a6121
 spec:
   clusterIP: 10.224.238.244
   externalTrafficPolicy: Cluster
