@@ -1,10 +1,25 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: guestbook-ui
+  creationTimestamp: "2020-10-28T12:05:36Z"
+  labels:
+    run: kubernetes-bootcamp
+  name: kubernetes-bootcamp
+  namespace: default
+  resourceVersion: "1147"
+  selfLink: /api/v1/namespaces/default/services/kubernetes-bootcamp
+  uid: dc7a40c3-3e01-4b10-953d-e3c10eb0d551
 spec:
+  clusterIP: 10.99.66.26
+  externalTrafficPolicy: Cluster
   ports:
-  - port: 80
-    targetPort: 80
+  - nodePort: 31820
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
   selector:
-    app: guestbook-ui
+    run: kubernetes-bootcamp
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
