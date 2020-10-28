@@ -8,7 +8,7 @@ metadata:
   labels:
     app: kubernetes-bootcamp
   name: kubernetes-bootcamp
-  namespace: default
+  namespace: guestbook
   resourceVersion: "548"
   selfLink: /apis/apps/v1/namespaces/default/deployments/kubernetes-bootcamp
   uid: 1c8ee52e-d0b7-41ba-bb42-3d48a4370e66
